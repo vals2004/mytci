@@ -1,0 +1,253 @@
+html,
+body {
+    height: 100%;
+}
+
+.mytci-newview{
+    float: left;
+    width: calc(100% - 266px);
+    min-width: 1090px;
+    margin: 0 auto;
+    min-height: 620px;
+    height: 100%;
+    padding: 25px 10% 0px 5%;
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    0 0 40px rgba(0, 0, 0, .1) inset;
+    z-index: -100;
+    background-color: #efe3c6; 
+}
+.decor{
+    height: 100%;
+}
+
+.mytci-newview th{
+    width: 90px;
+}
+
+a.button7{
+  position: absolute;
+  cursor: pointer;
+  bottom: 0;
+  margin-bottom: -20px;
+  margin-left: 325px;
+  width: 150px;
+  text-align: center;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  text-shadow: 0 -1px 1px #cc5500;
+  padding: .8em 2em;
+  outline: none;
+  border-radius: 1px;
+  background: linear-gradient(to left, rgba(0,0,0,.3), rgba(0,0,0,.0) 50%, rgba(0,0,0,.3)), linear-gradient(#d77d31, #fe8417, #d77d31);
+  background-size: 100% 100%, auto;
+  background-position: 50% 50%;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, #000 0 10px 15px -10px;
+  transition: 0.2s;
+}
+a.button7:hover {
+  background-size: 140% 100%, auto;
+}
+a.button7:active {
+    background: #3f51b5;
+  color: #ffdead;
+  box-shadow: inset #ebab00 0 -1px 1px, inset 0 1px 1px #ffbf00, #cc7722 0 0 0 1px, 0 10px 10px -9px #000;
+}
+
+.pagination > li > a,.pagination > li:first-child > a, .pagination > li:first-child > span{color:#795548;background-color: #efe3c6;border: 0;}
+.pagination > .active > a,.pagination > .active > a:hover {background-color: #795548; border: 0;}
+
+h1{ margin-top: 10px;}
+table{
+   color:#795548;
+}
+.pagination{margin: 0px;}
+
+.mytci-newview table a,table a:hover{color:#795548;}
+.mytci-newview .table-striped > tbody > tr:nth-child(odd) > td{
+    background: #795548;
+    color: white;
+    border: 0px;
+}
+
+.mytci-newview .tr,.mytci-newview .table-bordered,.mytci-newview .table > thead:first-child > tr:first-child > th,.mytci-newview .table-bordered >.mytci-newview tbody >.mytci-newview tr >.mytci-newview td {vertical-align: middle; border: 0px;}
+.GrView > .table-striped > tbody > tr:nth-child(2n+1) > th {background: #795548; color: #F9F9F9;}
+.GrView > .table-striped > tbody > tr:nth-child(2n+1) > td{background: #F9F9F9; color: #795548;}
+.buta{
+  color: #000;
+  box-shadow: 0 0 0 1px #ddd inset, 0 1px 1px #fff;
+  border-radius: 10%;
+  width:5px;
+  height:5px;
+  position:absolute;
+}
+.buta:hover {
+  background: #dcdcdc linear-gradient(#fff, #dcdcdc);
+  box-shadow: 0 0 0 1px #aaa inset, 0 1px 1px #aaa;
+}
+.buta:active {
+  background: none;
+    box-shadow: 0 0 0 1px #bbb inset, 0 1px 3px rgba(0,0,0,.5) inset, 0 1px 2px #fff;
+}
+
+a.button6 {
+  white-space: nowrap;
+  position: absolute;
+  float: top;
+  z-index: 1000;
+  font-weight: bold;
+  color: white;
+  text-decoration: none;
+  padding: .8em 2em;
+  box-shadow: #000 0 10px 15px -10px;
+  outline: none;
+  background:#3f51b5;
+  background-position: 50% 50%;
+  transition: 0.2s;
+}
+a.button6:hover {
+  padding-left: 50px;
+}
+
+a.button6:active{
+  padding-left: 70px;
+}
+
+.book, .book-1{
+    float: left;
+    height:100%;
+    min-width: 1360px;
+    width: 100%;
+}
+.left-book,.left-book-stripes,.center-book,.center-right-book,.right-book,.right-book-end,.last{    
+    float: left;
+    min-height: 620px;
+    height: 100%;
+    z-index: 100;
+    margin: 0 auto;
+    position: relative;
+}
+.book-1 >.right-book,.book-1 >.right-book-end,.book-1 >.last,.book-1 >.mytci-newview{min-height: 950px;}
+.left-book{width: 150px; background:url(../../materials/bg-left.jpg);}
+.left-book-stripes{width: 15px; background:url(../../materials/bg-left-str.jpg);
+        box-shadow:0 0 80px rgba(0, 0, 0, .5) inset;}
+.center-book{
+    min-width: 550px; width: calc(100% - 443px); 
+    background:url(../../materials/bg-center.jpg); 
+    z-index: 101;
+    box-shadow: 0 0 80px rgba(0, 0, 0, .5) inset;}
+.book-map{
+    background:url(../../materials/map.jpg);
+    height: 570px;
+    width: 850px;
+	position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    margin: auto;
+    box-shadow: 0px 0px 34px -1px #000000;
+}
+.center-right-book{
+    width: 12px; background:url(../../materials/bg-centr-str.jpg);
+    z-index: 100;}
+.right-book{
+    width: 3px;
+    background-color: #efe3c6;  
+    box-shadow:
+    0 1px 4px rgba(0, 0, 0, .3),
+    0 0 40px rgba(0, 0, 0, .1) inset;}
+.right-book-end{width: 7px; background:url(../../materials/bg-end-str.jpg);
+    box-shadow: 0 0 3px rgba(0, 0, 0, .5),
+    0 0 5px 10px rgba(0, 0, 0, .5)}
+.last{width: 232px; background:url(../../materials/bg.jpg); z-index: 0; }
+
+
+
+.wrap {
+    min-height: 100%;
+    height: auto;
+    margin: 0 auto -60px;
+    padding: 0 0 60px;
+}
+
+.wrap > .container {
+    padding: 70px 15px 20px;
+}
+
+.footer {
+    height: 60px;
+    background-color: #f5f5f5;
+    border-top: 1px solid #ddd;
+    padding-top: 20px;
+}
+
+.jumbotron {
+    text-align: center;
+    background-color: transparent;
+}
+
+.jumbotron .btn {
+    font-size: 21px;
+    padding: 14px 24px;
+}
+
+.not-set {
+    color: #c55;
+    font-style: italic;
+}
+
+/* add sorting icons to gridview sort links */
+a.asc:after, a.desc:after {
+    position: relative;
+    top: 1px;
+    display: inline-block;
+    font-family: 'Glyphicons Halflings';
+    font-style: normal;
+    font-weight: normal;
+    line-height: 1;
+    padding-left: 5px;
+}
+
+a.asc:after {
+    content: /*"\e113"*/ "\e151";
+}
+
+a.desc:after {
+    content: /*"\e114"*/ "\e152";
+}
+
+.sort-numerical a.asc:after {
+    content: "\e153";
+}
+
+.sort-numerical a.desc:after {
+    content: "\e154";
+}
+
+.sort-ordinal a.asc:after {
+    content: "\e155";
+}
+
+.sort-ordinal a.desc:after {
+    content: "\e156";
+}
+
+.grid-view th {
+    white-space: nowrap;
+}
+
+.hint-block {
+    display: block;
+    margin-top: 5px;
+    color: #999;
+}
+
+.error-summary {
+    color: #a94442;
+    background: #fdf7f7;
+    border-left: 3px solid #eed3d7;
+    padding: 10px 20px;
+    margin: 0 0 15px 0;
+}
