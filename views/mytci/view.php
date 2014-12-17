@@ -13,7 +13,7 @@ use yii\data\ActiveDataProvider;
         'attributes' => [
             'description:html' => 
             [
-                'label'=>'<img src="../img/MC/'.$model->img_src.'.png" height="150">',
+                'label'=>"<img src=\"../img/MC/".$model->img_src."\" height=\"150\">",
                 'value' => '',
             ],
             'first_name',
@@ -36,10 +36,14 @@ use yii\data\ActiveDataProvider;
             [
                 'attribute'=>'',
                 'format' => 'raw',
-                'value' => function($data) { return Html::a(Html::img('../img/WC/'.$data->img_src.'.png', ['width'=>'50',]),null,['href' =>'index.php?r=work%2Fview&id='.$data->id.'&type='.$_GET['type'],'target'=>'_blank',]); },
+                'value' => function($data) { return Html::a(Html::img('../img/WC/'.$data->img_src, ['width'=>'50',]),null,['href' =>'index.php?r=work%2Fview&id='.$data->id.'&type='.$_GET['type'],'target'=>'_blank',]); },
             ],
             'price',
-            'description:ntext',
+            [
+                    'attribute'=>'description',
+                    'format' => 'raw',
+                    'value' => function($data) { return mb_substr($data->description,0,80,"utf-8").'...'; },
+            ],
         ],
     ]); ?>
     
@@ -56,3 +60,5 @@ use yii\data\ActiveDataProvider;
     <div class="right-book-end" style="z-index: 1;"></div>
     <div class="last"></div>
 </div>
+
+<script>document.getElementById(<?php echo $_GET['type']?>).style.background = '#795548';</script>

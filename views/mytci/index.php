@@ -16,12 +16,16 @@ $this->title = 'Митці';
                 [
                     'attribute'=>'',
                     'format' => 'raw',
-                    'value' => function($data) { return Html::a(Html::img('../img/MC/'.$data->img_src.'.png', ['width'=>'50',]),null,['href' =>'index.php?r=mytci%2Fview&id='.$data->id.'&type='.$_GET['type'],'target'=>'_blank',]); },
+                    'value' => function($data) { return Html::a(Html::img('../img/MC/'.$data->img_src, ['width'=>'50',]),null,['href' =>'index.php?r=mytci%2Fview&id='.$data->id.'&type='.$_GET['type'],'target'=>'_blank',]); },
                 ],
                 'first_name',
                 'sec_name',
                 'last_name',
-                'adress',
+                [
+                    'attribute'=>'adress',
+                    'format' => 'raw',
+                    'value' => function($data) { return mb_substr($data->adress,0,50,"utf-8").'...'; },
+                ],
                 'tel_number',
             ],
         ]); ?>
@@ -43,6 +47,7 @@ $this->title = 'Митці';
 </div>
 
 <script>
+    document.getElementById(<?php echo $_GET['type']?>).style.background = '#795548';
     document.getElementById('100').style.minHeight = <?php echo $_COOKIE["windH"] ?>+"px";
     document.getElementById('101').style.minHeight = <?php echo $_COOKIE["windH"] ?>+"px";
 </script>

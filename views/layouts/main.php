@@ -41,7 +41,6 @@ function cloNeN(){
     }
     else alert("Ви можете відіслати одразу не більше 10 робіт. Для додавання більшої кількості повторіть процедуру");
 }
-document.getElementById(<?php echo $_GET['type']?>).style.background = '#795548';
 </script>
 </html>
 <?php $this->endPage() ?>

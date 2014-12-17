@@ -30,7 +30,7 @@ class ContactForm extends Model
             ['about', 'string', 'max' => 500],
             ['area', 'string', 'max' => 25],
             ['photo', 'safe'],
-            ['photo', 'image',  'notImage'=>'Завантаживати можна тільни зображення з розширеннями: jpg/png'],
+            ['photo', 'file', 'extensions' => 'gif, jpg',],
             ['photo', 'file', 'maxSize'=>'1000000'],
             ['email', 'email'],
             ['verifyCode', 'captcha'],

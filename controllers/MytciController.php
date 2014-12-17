@@ -52,8 +52,8 @@ class MytciController extends Controller
              case 7:
              $argument = 'Ikony';
              break; 
-			}
-            $sql = 'SELECT `Mytec` FROM `Type` WHERE `'.$argument.'` is true';
+        }
+        $sql = 'SELECT `Mytec` FROM `Type` WHERE `'.$argument.'` is true';
             
         $dataProvider = new ActiveDataProvider([
             'query' => Mytci::find()->where(['id'=> Type::findBySql($sql)->column()]),

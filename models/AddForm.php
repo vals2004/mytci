@@ -5,6 +5,8 @@ namespace app\models;
 use Yii;
 use yii\base\Model;
 
+use yii\web\UploadedFile;
+
 class AddForm extends Model
 {
     public $ID;
@@ -23,7 +25,7 @@ class AddForm extends Model
             ['discription', 'string', 'max' => 500],
             ['price', 'string', 'max' => 25],
             ['photoWork', 'safe'],
-            ['photoWork', 'image',  'notImage'=>'Завантаживати можна тільни зображення з розширеннями: jpg/png'],
+            ['photoWork', 'file', 'extensions' => 'gif, jpg',],
             ['photoWork', 'file', 'maxSize'=>'1000000'],
             ['email', 'email'],
             ['verifyCode', 'captcha'],

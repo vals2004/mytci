@@ -12,7 +12,7 @@ use yii\widgets\DetailView;
         'attributes' => [
             'description:html' => 
             [
-                'label'=>'<img src="../img/WC/'.$model->img_src.'.png" height="150">',
+                'label'=>"<img src=\"../img/WC/".$model->img_src."\" height=\"150\">",
                 'value' => 'Опис: '.$model->description,
             ],
             'price',
@@ -32,3 +32,4 @@ use yii\widgets\DetailView;
     <div class="right-book-end" style="z-index: 1;"></div>
     <div class="last"></div>
 </div>
+<script>document.getElementById(<?php echo $_GET['type']?>).style.background = '#795548';</script>
